@@ -16,14 +16,11 @@ map("n", "<C-l>", "<C-w><C-l>", { desc = "Move focus to the right window" })
 map("n", "<C-j>", "<C-w><C-j>", { desc = "Move focus to the lower window" })
 map("n", "<C-k>", "<C-w><C-k>", { desc = "Move focus to the upper window" })
 
--- Neotree
-map("n", "<C-b>", "<Cmd>Neotree toggle<CR>")
-
 map("n", "<leader>h", "0", { desc = "Ir para o começo da linha" })
 map("n", "<leader>l", "$", { desc = "Ir para o final da linha" })
 
 map("n", ";", ":")
 
 -- Toggleterm keymaps
-map("n", "<A-h>", "<cmd>ToggleTerm<CR>", { desc = "Toggle terminal" })
-map("t", "<A-h>", "<cmd>ToggleTerm<CR>")
+map("n", "<leader>tt", "<cmd>ToggleTerm<CR>", { desc = "Toggle terminal" })
+map("t", "<leader>tt", "<cmd>ToggleTerm<CR>")

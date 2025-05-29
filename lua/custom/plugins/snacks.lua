@@ -14,11 +14,10 @@ return {
 				{ section = "header" },
 				{ icon = " ", title = "Keymaps", section = "keys", indent = 2, padding = 1 },
 				{ icon = " ", title = "Recent Files", section = "recent_files", indent = 2, padding = 1 },
-				{ icon = " ", title = "Projects", section = "projects", indent = 2, padding = 1 },
 				{ section = "startup" },
 			},
 		},
-		explorer = { enabled = false },
+		explorer = { enabled = true },
 		indent = { enabled = true },
 		input = { enabled = true },
 		picker = { enabled = true },
@@ -58,6 +57,13 @@ return {
 				Snacks.picker.command_history()
 			end,
 			desc = "Command History",
+		},
+		{
+			"<leader>e",
+			function()
+				Snacks.explorer()
+			end,
+			desc = "Tree explorer",
 		},
 		-- find
 		{
@@ -331,5 +337,6 @@ return {
 			end,
 			desc = "LSP Workspace Symbols",
 		},
+		--other
 	},
 }

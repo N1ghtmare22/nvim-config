@@ -55,7 +55,7 @@ return {
 			fmt = function(str)
 				--return "" .. str
 				-- displays only the first character of the mode
-				return ""
+				return " " .. str
 			end,
 		}
 
